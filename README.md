@@ -1,4 +1,4 @@
 SimpleHTML
 ==========
 
-Personal fandbox for HTML/CSS/Javascript learning
+Personal Sandbox for HTML/CSS/Javascript learning
