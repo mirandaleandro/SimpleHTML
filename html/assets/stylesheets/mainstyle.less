@@ -6,6 +6,9 @@
 @color_palette3:#aa9966;
 @color_palette4:#eeeeee;
 @color_palette5:#ddbb77;
+@color_palette6:#AAAAAA;
+@color_palette7:#FAFAFA;
+@color_black:#000;
 
 @import url(http://fonts.googleapis.com/css?family=Monda:700);
 @import url(http://fonts.googleapis.com/css?family=Hammersmith+One:400);
@@ -15,10 +18,12 @@
 @containerWidth:1024px;
 @containerSplitWidth:@containerWidth/2-10;
 
+/* General Style */
 *
 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -31,8 +36,8 @@ input, textarea
 {
   height: 40px;
   outline: none;
-  border: 1px solid #AAA;
-  background-color: #fafafa;
+  border: 1px solid @color_palette6;
+  background-color: @color_palette7;
   font-size:18px;
   text-indent: 8px;
 }
@@ -40,7 +45,7 @@ input, textarea
 input[type=submit]
 {
   background-color: @color_palette1 ;
-  color: #FFF;
+  color: @color_black;
   border-radius: 5px;
   padding: 5px 15px;
   text-indent: initial;
@@ -73,7 +78,7 @@ html, body, section
   height:100%;
 }
 
-.resume, .contact, .about-me
+.resume, .contact, .about-me, .blog-post
 {
   height: initial;
 }
@@ -94,6 +99,8 @@ h1,h2,h3,h4,h5,h6
   margin: 0;
   padding: 0;
 }
+
+/* Page Commons */
 
 .nav-bar
 {
@@ -137,14 +144,49 @@ h1,h2,h3,h4,h5,h6
 
   li:hover
   {
-    background-color: rgba(1,1,1,0.3);
+    background-color: rgba(1,1,1,0.1);
   }
 }
+
+
+section
+{
+  h1
+  {
+    font-size: 60px;
+    font-family: 'Gilda Display', serif;
+    font-weight: lighter;
+    padding-bottom: 25px;
+  }
+
+  .container
+  {
+    margin: 0 auto;
+    width: @containerWidth;
+    padding: 70px 0;
+  }
+
+  .interests
+  {
+    padding-top: 25px;
+  }
+
+  .interests > div
+  {
+    display: inline-block;
+    width: 250px;
+  }
+}
+
+/* Sections */
 
 .intro
 {
   background-repeat:no-repeat;
   background-image: url(../img/mypicture.JPG);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size:cover;
 
   .container-info
@@ -177,16 +219,14 @@ h1,h2,h3,h4,h5,h6
 .aboutme
 {
   background-color: @color_palette5;
-  .container
-  {
-
-  }
 }
 
 .resume
 {
   background-repeat: no-repeat;
   background-image: url(http://static2.nexusmods.com/15/images/110/6196106-1382127557.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-color: inherit;
   background-attachment: fixed;
@@ -303,32 +343,25 @@ h1,h2,h3,h4,h5,h6
   }
 }
 
-section
+
+.blog-post
 {
-  h1
-  {
-    font-size: 60px;
-    font-family: 'Gilda Display', serif;
-    font-weight: lighter;
-    padding-bottom: 25px;
-  }
+  background-color: @color_palette4;
+  color:@color_palette1_A;
+  text-align: center;
 
   .container
   {
-    margin: 0 auto;
-    width: @containerWidth;
-    padding: 70px 0;
+    padding: 120px 0;
   }
 
-  .interests
+  p,h2,h1
   {
-    padding-top: 25px;
+    text-align: left;
   }
 
-  .interests > div
+  img, video
   {
-    display: inline-block;
-    width: 250px;
+    width:70%;
   }
 }
-

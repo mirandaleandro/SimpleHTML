@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title>Leandro</title>
-    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="assets/stylesheets/sprites/sprites.css">
+    <link rel="stylesheet" href="assets/stylesheets/mainstyle.css" />
+
+    <link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.3/video.js"></script>
+    <style type="text/css">
+        .vjs-default-skin { color: #ebd4d4; }
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level { background-color: #1e2a31 }
+        .vjs-default-skin .vjs-control-bar,
+        .vjs-default-skin .vjs-big-play-button { background: rgba(85,25,25,0.65) }
+        .vjs-default-skin .vjs-slider { background: rgba(85,25,25,0.21666666666666667) }
+    </style>
+
 </head>
 <body>
 
-<header>
-    <h1>Leandro Miranda</h1>
+<header class="nav-bar">
+    <a href="me.html"><h1 class="page-title">Leandro Miranda</h1></a>
     <nav>
         <ul>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="me.html">About me</a></li>
-            <li><a href="assets/files/resume.pdf">Download Resume</a></li>
+            <a href="me.html"><li>Home</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="assets/files/resume.pdf"><li>Download Resume</li></a>
         </ul>
     </nav>
 </header>
 
-<section class="content">
-    <div class="blog-post">
+<section class="blog-post">
+
+    <div class="container">
         <h1 class="post-title">Play! Framework</h1>
 
         <div class="content">
@@ -36,7 +51,7 @@
 
             <p>The user interface (View) renders the Model and allows interaction with the application users . Multiple interfaces can exist for a single Model. In the case of web applications , the user interface typically uses known technologies such as HTML , XML or JSON .</p>
 
-            //TODO
+
             <img src="assets/files/blog/mvc-play.png">
 
             <p>The control responds and processes events, triggering changes to the model. In web applications, for example, these events are typically HTTP requests  that the control receives, extracts important data and applies the changes to the model.</p>
@@ -56,10 +71,14 @@
 
             <h2>Using Play</h2>
             <p>The following video explains the basics of the Play! providing a small tutorial on the creation of apps using the framework.</p>
-            <video src="assets/files/blog/playframework-introduction.mp4" ></video>
+
+            <div class="video-container">
+                <video src="assets/files/blog/playframework-introduction.mp4" preload controls></video>
+            </div>
 
         </div>
     </div>
+
 </section>
 
 </body>
