@@ -3,8 +3,9 @@
 <head>
     <title>Leandro</title>
 
-    <link rel="stylesheet/less" type="text/css" href="assets/stylesheets/mainstyle.less" />
-    <script src="assets/scripts/less.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/stylesheets/sprites/sprites.css">
+    <link rel="stylesheet" href="assets/stylesheets/mainstyle.css" />
+
 </head>
 <body>
 
@@ -23,7 +24,6 @@
     <div class="container-info">
         <h1 class="hello-message">Hello, I'm Leandro</h1>
         <h2 class="hello-message-tagline">Software Developer living in Provo Utah</h2>
-        <img class="avatar-picture" src="assets/img/mypicture.JPG" width="512">
     </div>
 </section>
 
@@ -89,80 +89,91 @@
 </section>
 
 <section class="resume">
-    <h1>Resume</h1>
-    <div class="work-experience">
-        <h2>Computer Specialist</h2>
-        <h3 class="date">Sep 2013 present</h3>
-        <h4 class="info company-name">Brigham Young University</h4>
-        <h4 class="info location">Provo, UT - USA</h4>
-        <p>Delivering a new solution of CMS that improve content managers experience.</p>
-        <div class="duties">
-            <h4>Duties</h4>
-            <ul class="duties-list">
-                <li>Linux Administration</li>
-                <li>Drupal</li>
-                <li>Relational Database</li>
-                <li>Responsive Design</li>
-                <li>Javascript</li>
-                <li>CSS/LESS</li>
-                <li>HTML</li>
-                <li>PHP</li>
-            </ul>
-        </div>
-    </div>
+    <div class="container">
+        <h1>Resume</h1>
 
-    <div class="work-experience">
+        <div class="work-experience">
+            <h2>Computer Specialist</h2>
+            <h3 class="date">Sep 2013 present</h3>
+            <h4 class="info company-name">Brigham Young University</h4>
+            <h4 class="info location">Provo, UT - USA</h4>
+            <p>Delivering a new solution of CMS that improve content managers experience.</p>
+            <div class="duties">
+                <h4>Duties</h4>
+                <ul class="duties-list">
+                    <li>Linux Administration</li>
+                    <li>Drupal</li>
+                    <li>Relational Database</li>
+                    <li>Responsive Design</li>
+                    <li>Javascript</li>
+                    <li>CSS/LESS</li>
+                    <li>HTML</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="work-experience">
         <h2>Systems Analyst</h2>
         <h3 class="date">Fev 2010 - Aug 2013</h3>
         <h4 class="info company-name">Micromar</h4>
         <h4 class="info location">Florianópolis, SC - Brazil</h4>
-        <p></p>
+        <p>Produced high quality neuronavigator software that became one of the most important company's asset.</p>
         <div class="duties">
             <h4>Duties</h4>
             <ul class="duties-list">
-                <li></li>
-                <li>Drupal</li>
-                <li>Relational Database</li>
-                <li>Responsive Design</li>
-                <li>Javascript</li>
-                <li>CSS/LESS</li>
-                <li>HTML</li>
-                <li>PHP</li>
+                <li>Implemented about 50% of the main company's software</li>
+                <li>Reduced bugs incidence by 94%</li>
+                <li>Increased maintainability by refactoring code according to clean coding practices</li>
+                <li>Designed and implemented a modular architecture reducing maintainability costs</li>
+                <li>Designed and implemented features that innovated the market of image guided therapy</li>
             </ul>
         </div>
+    </div>
     </div>
 </section>
 
 <section class="contact">
-    <h1>Contact Info</h1>
-    <address>
-        <div class="email">mirandaleandro@gmail.com</div>
-        <div class="location">
-            <p>497 Wymount Terrace</p>
-            <p>Provo, UT</p>
-            <p>84604</p>
+    <div class="container">
+        <h1>Contact Info</h1>
+        <div class="container-split2">
+            <form>
+                <input class="name" name="name" type="text" placeholder="Your name">
+                <input class="email" name="email" type="text" placeholder="Your e-mail">
+                <input class="subject" name="subject" type="text" placeholder="Subject">
+                <textarea class="message" name="message" placeholder="Type your message here"></textarea>
+                <input class="submit-button" type="submit" value="Send">
+            </form>
         </div>
-        <div class="phone">385 207 6957</div>
-        <div class="social">
-            <h3>Social</h3>
-            <ul class="social-icons">
-                <li><a href="http://facebook.com/mirandaleandro">Facebook</a></li>
-                <li><a href="http://www.linkedin.com/in/mirandaleandro">Linkedin</a></li>
-                <li><a href="http://twitter.com/mgleandro">Twitter</a></li>
-            </ul>
-        </div>
-    </address>
-    <form>
-        <input class="name" name="name" type="text" placeholder="Your name">
-        <input class="email" name="email" type="text" placeholder="Your e-mail">
-        <input class="subject" name="subject" type="text" placeholder="Subject">
-        <textarea name="message" placeholder="Type your message here"></textarea>
-        <input type="submit" value="Send">
-    </form>
 
+        <div class="container-split2">
+            <address>
+                <div class="contact-info">
+                    <div class="email"><span class="container-icon"><span class="icon-mail"></span></span>mirandaleandro@gmail.com</div>
+                    <div class="location">
+                        <span class="container-icon"><span class="icon-mail3"></span></span>
+
+                        <div class="location-description">
+                            <p>497 Wymount Terrace</p>
+                            <p>Provo, UT 84604</p>
+                        </div>
+
+                    </div>
+                    <div class="phone">
+                        <span class="container-icon"><span class="icon-phone"></span></span>385 207 6957</div>
+                    <div class="social">
+                        <h3>Social</h3>
+                        <ul class="social-icons">
+                            <li><a href="http://facebook.com/mirandaleandro"><span class="container-icon"><span class="icon-facebook"></span></span></a></li>
+                            <li><a href="http://www.linkedin.com/in/mirandaleandro"><span class="container-icon linkedin">in</span></a></li>
+                            <li><a href="http://twitter.com/mgleandro"><span class="container-icon"><span class="icon-twitter"></span></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </address>
+        </div>
+    </div>
 </section>
-
-
 
 </body>
 
