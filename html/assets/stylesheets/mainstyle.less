@@ -1,0 +1,367 @@
+//http://www.degraeve.com/color-palette/index.php?q=https://photos-6.dropbox.com/t/0/AADy3VRodemJbjm78Xr-y539FsZ7RzsP-vKyEnyqxR7Xbw/12/15721685/jpeg/1024x768/3/1390539600/0/2/DSC_0896.JPG/JhVB0FLQxlJBDcSF2RRF69flg5BizPOlF6stz7XRRt0,574A339A7947AA966AE6EDEFD7C275,694F21C3811ECBA14AE2F0F4FFDD45
+
+@color_palette1:#554433;
+@color_palette1_A:#665544;
+@color_palette2:#997744;
+@color_palette3:#aa9966;
+@color_palette4:#eeeeee;
+@color_palette5:#ddbb77;
+@color_palette6:#AAAAAA;
+@color_palette7:#FAFAFA;
+@color_black:#000;
+
+@import url(http://fonts.googleapis.com/css?family=Monda:700);
+@import url(http://fonts.googleapis.com/css?family=Hammersmith+One:400);
+@import url(http://fonts.googleapis.com/css?family=Gilda+Display);
+
+@topBarHeight:50px;
+@containerWidth:1024px;
+@containerSplitWidth:@containerWidth/2-10;
+
+/* General Style */
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header
+{
+  z-index: 9999;
+}
+
+input, textarea
+{
+  height: 40px;
+  outline: none;
+  border: 1px solid @color_palette6;
+  background-color: @color_palette7;
+  font-size:18px;
+  text-indent: 8px;
+}
+
+input[type=submit]
+{
+  background-color: @color_palette1 ;
+  color: @color_black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-indent: initial;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  color: @color_palette4;
+  min-width: 1024px;
+  font-size: 18px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container-icon
+{
+  background: #554433;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+html, body, section
+{
+  min-height: 100%;
+  height:100%;
+}
+
+.resume, .contact, .about-me, .blog-post
+{
+  height: initial;
+}
+
+a:active, a:link, a:visited
+{
+  color: @color_palette4;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  .clearfix;
+}
+
+.clearfix
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Commons */
+
+.nav-bar
+{
+  background-color: @color_palette1;
+  color: @color_palette4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  margin-left: auto ;
+  margin-right: auto ;
+
+  .page-title
+  {
+    position: absolute;
+    display: inline-table;
+    left: 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  ul
+  {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    padding: 0px;
+    zoom:1;
+    overflow: hidden;
+    margin: 0;
+    height: @topBarHeight;
+  }
+
+  li
+  {
+    padding: 0 30px;
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+  }
+
+  li:hover
+  {
+    background-color: rgba(1,1,1,0.1);
+  }
+}
+
+
+section
+{
+  h1
+  {
+    font-size: 60px;
+    font-family: 'Gilda Display', serif;
+    font-weight: lighter;
+    padding-bottom: 25px;
+  }
+
+  .container
+  {
+    margin: 0 auto;
+    width: @containerWidth;
+    padding: 70px 0;
+  }
+
+  .interests
+  {
+    padding-top: 25px;
+  }
+
+  .interests > div
+  {
+    display: inline-block;
+    width: 250px;
+  }
+}
+
+/* Sections */
+
+.intro
+{
+  background-repeat:no-repeat;
+  background-image: url(../img/mypicture.JPG);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size:cover;
+
+  .container-info
+  {
+    margin-top: -140px;
+    position: absolute;
+    top: 50%;
+    margin-left: 57%;
+    line-height: 70px;
+    font-family: 'Hammersmith One', sans-serif;
+    width: 490px;
+    text-shadow: #333 0.01em 0.01em 0.1em;
+  }
+
+  .hello-message
+  {
+    font-size: 64px;
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+
+  .hello-message-tagline
+  {
+    margin: 0;
+    line-height: 25px;
+    font-size: 29px;
+  }
+}
+
+.aboutme
+{
+  background-color: @color_palette5;
+}
+
+.resume
+{
+  background-repeat: no-repeat;
+  background-image: url(http://static2.nexusmods.com/15/images/110/6196106-1382127557.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: inherit;
+  background-attachment: fixed;
+
+  .work-experience
+  {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    border: 1px solid @color_palette1;
+    border-radius: 10px;
+    background-color: @color_palette5;
+    color: @color_palette1_A;
+    padding: 15px;
+    height: 474px;
+  }
+}
+
+.contact
+{
+  background-color: @color_palette4;
+  color:@color_palette1_A;
+
+  .container-split2
+  {
+    width: @containerWidth/2 - 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contact-info
+  {
+    border-top: 1px solid #554433;
+    margin: 0 15px 0 15px;
+    padding-top: 10px;
+    border-bottom: 1px solid #554433;
+    height: 312px;
+  }
+
+  .contact-info > div
+  {
+    margin-top:15px;
+  }
+
+  .container-icon
+  {
+    margin-right: 10px;
+  }
+
+  .container-icon.linkedin
+  {
+    font-size: 25px;
+    font-style: initial;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .social-icons
+  {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0 20px 0;
+
+    li
+    {
+      display: inline-block;
+    }
+  }
+
+  .location-description
+  {
+    display: inline-block;
+    vertical-align: middle;
+
+    p
+    {
+      margin: 0;
+    }
+  }
+
+  form
+  {
+      .name, .email
+      {
+          width: 250px;
+      }
+
+      .name
+      {
+        float: left;
+        margin-right: 2px;
+      }
+
+      .subject
+      {
+        width:502px;
+        margin-top: 12px;
+      }
+
+      .message
+      {
+        height: 150px;
+        margin: 15px 0px 0px;
+        left: 0px;
+        width: 502px;
+      }
+
+      .submit-button
+      {
+        margin-top: 10px;
+        width: 100%;
+      }
+  }
+}
+
+
+.blog-post
+{
+  background-color: @color_palette4;
+  color:@color_palette1_A;
+  text-align: center;
+
+  .container
+  {
+    padding: 120px 0;
+  }
+
+  p,h2,h1
+  {
+    text-align: left;
+  }
+
+  img, video
+  {
+    width:70%;
+  }
+}

@@ -1,0 +1,269 @@
+@import url(http://fonts.googleapis.com/css?family=Monda:700);
+
+@import url(http://fonts.googleapis.com/css?family=Hammersmith+One:400);
+
+@import url(http://fonts.googleapis.com/css?family=Gilda+Display);
+/* General Style */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header {
+  z-index: 9999;
+}
+input,
+textarea {
+  height: 40px;
+  outline: none;
+  border: 1px solid #aaaaaa;
+  background-color: #fafafa;
+  font-size: 18px;
+  text-indent: 8px;
+}
+input[type=submit] {
+  background-color: #554433;
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-indent: initial;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+  min-width: 1024px;
+  font-size: 18px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.container-icon {
+  background: #554433;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+html,
+body,
+section {
+  min-height: 100%;
+  height: 100%;
+}
+.resume,
+.contact,
+.about-me,
+.blog-post {
+  height: initial;
+}
+a:active,
+a:link,
+a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  margin: 0;
+  padding: 0;
+}
+/* Page Commons */
+.nav-bar {
+  background-color: #554433;
+  color: #eeeeee;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.nav-bar .page-title {
+  position: absolute;
+  display: inline-table;
+  left: 15px;
+  height: 50px;
+  line-height: 50px;
+}
+.nav-bar ul {
+  list-style-type: none;
+  /*to remove bullets*/
+
+  text-align: center;
+  padding: 0px;
+  zoom: 1;
+  overflow: hidden;
+  margin: 0;
+  height: 50px;
+}
+.nav-bar li {
+  padding: 0 30px;
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+}
+.nav-bar li:hover {
+  background-color: rgba(1, 1, 1, 0.1);
+}
+section h1 {
+  font-size: 60px;
+  font-family: 'Gilda Display', serif;
+  font-weight: lighter;
+  padding-bottom: 25px;
+}
+section .container {
+  margin: 0 auto;
+  width: 1024px;
+  padding: 70px 0;
+}
+section .interests {
+  padding-top: 25px;
+}
+section .interests > div {
+  display: inline-block;
+  width: 250px;
+}
+/* Sections */
+.intro {
+  background-repeat: no-repeat;
+  background-image: url(../img/mypicture.JPG);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.intro .container-info {
+  margin-top: -140px;
+  position: absolute;
+  top: 50%;
+  margin-left: 57%;
+  line-height: 70px;
+  font-family: 'Hammersmith One', sans-serif;
+  width: 490px;
+  text-shadow: #333 0.01em 0.01em 0.1em;
+}
+.intro .hello-message {
+  font-size: 64px;
+  margin: 0;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.intro .hello-message-tagline {
+  margin: 0;
+  line-height: 25px;
+  font-size: 29px;
+}
+.aboutme {
+  background-color: #ddbb77;
+}
+.resume {
+  background-repeat: no-repeat;
+  background-image: url(http://static2.nexusmods.com/15/images/110/6196106-1382127557.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: inherit;
+  background-attachment: fixed;
+}
+.resume .work-experience {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  border: 1px solid #554433;
+  border-radius: 10px;
+  background-color: #ddbb77;
+  color: #665544;
+  padding: 15px;
+  height: 474px;
+}
+.contact {
+  background-color: #eeeeee;
+  color: #665544;
+}
+.contact .container-split2 {
+  width: 502px;
+  display: inline-block;
+  vertical-align: top;
+}
+.contact .contact-info {
+  border-top: 1px solid #554433;
+  margin: 0 15px 0 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid #554433;
+  height: 312px;
+}
+.contact .contact-info > div {
+  margin-top: 15px;
+}
+.contact .container-icon {
+  margin-right: 10px;
+}
+.contact .container-icon.linkedin {
+  font-size: 25px;
+  font-style: initial;
+  text-decoration: none;
+  text-align: center;
+}
+.contact .social-icons {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+.contact .social-icons li {
+  display: inline-block;
+}
+.contact .location-description {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact .location-description p {
+  margin: 0;
+}
+.contact form .name,
+.contact form .email {
+  width: 250px;
+}
+.contact form .name {
+  float: left;
+  margin-right: 2px;
+}
+.contact form .subject {
+  width: 502px;
+  margin-top: 12px;
+}
+.contact form .message {
+  height: 150px;
+  margin: 15px 0px 0px;
+  left: 0px;
+  width: 502px;
+}
+.contact form .submit-button {
+  margin-top: 10px;
+  width: 100%;
+}
+.blog-post {
+  background-color: #eeeeee;
+  color: #665544;
+  text-align: center;
+}
+.blog-post .container {
+  padding: 120px 0;
+}
+.blog-post p,
+.blog-post h2,
+.blog-post h1 {
+  text-align: left;
+}
+.blog-post img,
+.blog-post video {
+  width: 70%;
+}

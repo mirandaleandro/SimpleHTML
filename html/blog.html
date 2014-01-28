@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leandro</title>
+
+    <link rel="stylesheet" href="assets/stylesheets/sprites/sprites.css">
+    <link rel="stylesheet" href="assets/stylesheets/mainstyle.css" />
+
+    <link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.3/video.js"></script>
+    <style type="text/css">
+        .vjs-default-skin { color: #ebd4d4; }
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level { background-color: #1e2a31 }
+        .vjs-default-skin .vjs-control-bar,
+        .vjs-default-skin .vjs-big-play-button { background: rgba(85,25,25,0.65) }
+        .vjs-default-skin .vjs-slider { background: rgba(85,25,25,0.21666666666666667) }
+    </style>
+
+</head>
+<body>
+
+<header class="nav-bar">
+    <a href="me.html"><h1 class="page-title">Leandro Miranda</h1></a>
+    <nav>
+        <ul>
+            <a href="me.html"><li>Home</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="assets/files/resume.pdf"><li>Download Resume</li></a>
+        </ul>
+    </nav>
+</header>
+
+<section class="blog-post">
+
+    <div class="container">
+        <h1 class="post-title">Play! Framework</h1>
+
+        <div class="content">
+
+            <h2>Intro</h2>
+            <p>The Play! Framework was created by Guillaume Bort still working on Zenexity around 2007, but the first time that the framework was released was on October 2009. The framework was developed in order to provide a framework that allows building web applications with Java quickly and easily. The Play! provides focused tooling for producing REST-based software architecture, facilitating the development of agile. The framework is heavily inspired by Ruby on Rails and Django, allowing developers to use the power of the Java language in an environment free from the archaic structure of Java EE, significantly increasing productivity.</p>
+
+            <p>The Play! framework would not do if they do not bring any new features that improve production of developers compared to other Java frameworks for success. The following subsections present the main advantages to build applications based on Play.</p>
+
+            <h2>Stateless</h2>
+            <p>The framework is designed to work in such architecture called 'share nothing'. The idea behind the share is nothing is to build completely stateless applications, reducing each request to its own scope. This ability to work without maintaining any state allows the application to be easily scalable, allowing developers to run multiple instances on multiple servers.</p>
+
+            <h2>MVC</h2>
+            <p>The Play! was developed in order to enable the creation of applications that make use of MVC (Model-View -Controller). The MVC has as main feature separating the application's logic layer from the interface presented to the user. The Model is used to represent the information that the system operates. The Model also adds meaning to the data such as calculating birthday from date of birth. In the MVC architecture, the database layer is contained in the Model.</p>
+
+            <p>The user interface (View) renders the Model and allows interaction with the application users . Multiple interfaces can exist for a single Model. In the case of web applications , the user interface typically uses known technologies such as HTML , XML or JSON .</p>
+
+
+            <img src="assets/files/blog/mvc-play.png">
+
+            <p>The control responds and processes events, triggering changes to the model. In web applications, for example, these events are typically HTTP requests  that the control receives, extracts important data and applies the changes to the model.</p>
+
+            <h2>Efficient execution</h2>
+            <p>Using the Play!, developers can source code files, save them and reload the browser without the need to manually build, deploy or restart the server, which facilitates implementation and reduce development time, significantly increasing production.</p>
+            <p>For stable releases, the framework also has advantage as running , being able to generate files of type WAR , enabling applications based on the framework can run on widely used with the JBoss servers .</p>
+
+            <h2>Efficient models</h2>
+            <p>The Play has a system of templates for creating efficient graphical interfaces to generate HTML , XML , JSON , or any text-based document. These models are used with Groovy expression language and also has a tagging system that allows reuse of functions.</p>
+
+            <h2>Integrated environment</h2>
+            <p>The framework provides a number of accessories needed for creating web applications integrating Hibernate, OpenID, Memcached, localization and internationalization support beyond the possibility of integration with other plugins.</p>
+
+            <h2>Presentation of problems</h2>
+            <p>The framework presents the source code and the exact line when mistakes happen, facilitating fixing of bugs.</p>
+
+            <h2>Using Play</h2>
+            <p>The following video explains the basics of the Play! providing a small tutorial on the creation of apps using the framework.</p>
+
+            <div class="video-container">
+                <video src="assets/files/blog/playframework-introduction.mp4" preload controls></video>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+
+</html>
