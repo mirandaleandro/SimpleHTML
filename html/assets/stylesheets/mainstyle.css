@@ -267,3 +267,12 @@ section .interests > div {
 .blog-post video {
   width: 70%;
 }
+.footer-content {
+  height: 50px;
+  background-color: #554433;
+  position: relative;
+}
+.footer-content .name {
+  display: inline-block;
+  padding: 10px 20px;
+}
