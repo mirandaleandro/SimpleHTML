@@ -84,5 +84,5 @@ var App = function()
 
     this.fillHeader();
 
-    this.startAnnoyingPrompt();
+   // this.startAnnoyingPrompt();
 }
